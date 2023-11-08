@@ -1,0 +1,25 @@
+{
+  "name": "softtek-training-jwt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:diekmrcoin/softtek-training-jwt.git",
+  "author": "Diego Maroto <diego.diemg@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2"
+  },
+  "scripts": {
+    "sync": "node src/sync/main.js",
+    "async": "node src/async/main.js",
+    "prettier": "prettier \"src/**/*.js\" --write",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "husky": ">=6",
+    "lint-staged": ">=10",
+    "prettier": "3.0.3"
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
+  }
+}
